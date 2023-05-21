@@ -9,7 +9,7 @@ artifacts = {"Model":{}, "Dataset":{}}
 artifacts["Model"]["model"]=clf
 artifacts["Model"]["model_type"]="classification"
 
-artifacts["Dataset"]["df"]=df
+artifacts["Dataset"]["df"]=df.sample(400)
 artifacts["Dataset"]["target"]="Survived"
 
 return artifacts
